@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Shaoxiang Wang / Personal Homepage"
+title                    : "Personal Homepage"
 title_separator          : "-"
 name                     : &name "Shaoxiang Wang"
 description              : &description "personal description"
@@ -25,14 +25,14 @@ author:
   name             : "Shaoxiang Wang"
   # pronouns         : # example: "she/her"  
   # bio              : "Short biography for the left-hand sidebar"
-  location         : "DFKI, Germany"
-  # employer         : "Red Brick University"
+  location         : "Kaiserslautern, Germany"
+  employer         : "DFKI"
   # uri              : # URL
-  # email            : "none@example.org" 
+  email            : "shaoxiang.wang@dfki.de" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
   orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL

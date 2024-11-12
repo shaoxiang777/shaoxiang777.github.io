@@ -20,6 +20,6 @@ I received my Master’s degree in Mechatronics from the Karlsruhe Institute of 
   *IEEE/CVF Winter Conference on Applications of Computer Vision (**WACV**), 2025*   
 
 - **MiKASA: Multi-Key-Anchor & Scene-Aware Transformer for 3D Visual Grounding**  
-  *Authors:* Chun-Peng Chang, Shaoxiang Wang, Alain Pagani, Didier Stricker  
+  *Chun-Peng Chang, Shaoxiang Wang, Alain Pagani, Didier Stricker*     
   *IEEE/CVF International Conference on Computer Vision and Pattern Recognition (**CVPR**), 2024*  
   *[Paper](https://openaccess.thecvf.com/content/CVPR2024/papers/Chang_MiKASA_Multi-Key-Anchor__Scene-Aware_Transformer_for_3D_Visual_Grounding_CVPR_2024_paper.pdf) [Code](https://github.com/dfki-av/MiKASA-3DVG)*
