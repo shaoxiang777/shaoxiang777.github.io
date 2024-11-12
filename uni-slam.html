@@ -25,22 +25,22 @@
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
         rel="stylesheet">
 
-  <link rel="stylesheet" href="./static/css/bulma.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
-  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
-  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
-  <link rel="stylesheet" href="./static/css/mag.css">
+  <link rel="stylesheet" href="./media/uni-slam/static/css/bulma.min.css">
+  <link rel="stylesheet" href="./media/uni-slam/static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./media/uni-slam/static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./media/uni-slam/static/css/fontawesome.all.min.css">
+  <link rel="stylesheet" href="./media/uni-slam/static/css/mag.css">
   <link rel="stylesheet"
         href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
-  <link rel="stylesheet" href="./static/css/index.css">
-  <link rel="icon" href="./static/images/icon.svg">
+  <link rel="stylesheet" href="./media/uni-slam/static/css/index.css">
+  <link rel="icon" href="./media/uni-slam/static/images/icon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script defer src="./static/js/fontawesome.all.min.js"></script>
-  <script src="./static/js/bulma-carousel.min.js"></script>
-  <script src="./static/js/bulma-slider.min.js"></script>
-  <script src="./static/js/index.js"></script>
-  <script src="./static/js/mag.js"></script>
+  <script defer src="./media/uni-slam/static/js/fontawesome.all.min.js"></script>
+  <script src="./media/uni-slam/static/js/bulma-carousel.min.js"></script>
+  <script src="./media/uni-slam/static/js/bulma-slider.min.js"></script>
+  <script src="./media/uni-slam/static/js/index.js"></script>
+  <script src="./media/uni-slam/static/js/mag.js"></script>
 
   <!-- Loads <model-viewer> for modern browsers: -->
   <script type="module"
@@ -278,7 +278,7 @@
         <hr>
         <h2 class="title is-3">Method</h2>
         <br>
-        <img src="./Uni-SLAM/pipeline.png" class="center" width="80%">
+        <img src="./media/uni-slam/Uni-SLAM/pipeline.png" class="center" width="80%">
         <div class="content has-text-justified">
           <br>  
           <p>
@@ -308,31 +308,31 @@
       <div class="img-zoom-container" align="center">
         <figure display="inline-block">
           <img id="reference"
-                src="./Uni-SLAM/images/comparison/gt/000.png" data-image="./Uni-SLAM/images/comparison/gt/" >
+                src="./media/uni-slam/Uni-SLAM/images/comparison/gt/000.png" data-image="./Uni-SLAM/images/comparison/gt/" >
           <figcaption>Reference</figcaption>
         </figure>
         
         <figure display="inline-block">
           <div id="zoomed-imap" class="img-zoom-result"
-                data-image="./Uni-SLAM/images/comparison/imap/"></div>
+                data-image="./media/uni-slam/Uni-SLAM/images/comparison/imap/"></div>
           <figcaption><a href="https://edgarsucar.github.io/iMAP/">iMAP</a></figcaption>
         </figure>
         
         <figure display="inline-block">
           <div id="zoomed-nice" class="img-zoom-result"
-                data-image="./Uni-SLAM/images/comparison/nice/"></div>
+                data-image="./media/uni-slam/Uni-SLAM/images/comparison/nice/"></div>
           <figcaption><a href="https://pengsongyou.github.io/nice-slam">NICE-SLAM</a></figcaption>
         </figure>
 
         <figure display="inline-block">
           <div id="zoomed-coslam" class="img-zoom-result"
-                data-image="./Uni-SLAM/images/comparison/coslam/"></div>
+                data-image="./media/uni-slam/Uni-SLAM/images/comparison/coslam/"></div>
           <figcaption><a href="https://hengyiwang.github.io/projects/CoSLAM.html">Co-SLAM</a></figcaption>
         </figure>
         
         <!-- <figure display="inline-block">
           <div id="zoomed-unislam" class="img-zoom-result"
-                data-image="./Uni-SLAM/images/comparison/unislam/"></div>
+                data-image="./media/uni-slam/Uni-SLAM/images/comparison/unislam/"></div>
           <figcaption>Uni-SLAM (Ours)</figcaption>
         </figure> -->
 
@@ -349,7 +349,7 @@
               </div>
               <model-viewer style="height: 360px; width: 480px;"
                         alt="NICE-SLAM"
-                        src="./Uni-SLAM/coslam_scan0000.glb"
+                        src="./media/uni-slam/Uni-SLAM/coslam_scan0000.glb"
                         ar-status="not-presenting"
                         camera-controls auto-rotate
                         exposure=".8"
@@ -362,7 +362,7 @@
               </div>
               <model-viewer style="height: 360px; width: 480px;"
                         alt="Uni-SLAM"
-                        src="./Uni-SLAM/unislam_scan0000.glb"
+                        src="./media/uni-slam/Uni-SLAM/unislam_scan0000.glb"
                         ar-status="not-presenting"
                         camera-controls auto-rotate
                         exposure=".8"
