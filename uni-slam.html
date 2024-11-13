@@ -276,14 +276,13 @@
 
 
 
-<section>
+<!-- <section>
   <div class="container">
     <div class="columns is-centered">
       <div class="column is-full-width">
         <h2 class="title is-3" align="center">Qualitative Analysis on Top Down Views and Textured Meshes</h2>
         <br>
-        <!-- <h3 align="center"> Hover over image to move the zoomed in patch </h3>
-        <h3 align="center">Click on reference image to switch to a different image</h3> -->
+        
         <div class="img-zoom-container" align="center">
           <figure display="inline-block">
             <img id="reference_top0" src="./media/uni-slam/Uni-SLAM/images/comparison/gt/000.png" data-image="./media/uni-slam/Uni-SLAM/images/comparison/gt/" >
@@ -355,7 +354,7 @@
       </div>
     </div>
   </div>
-</section>
+</section> -->
 
 
 
@@ -406,49 +405,51 @@
       </div>
     </div>
 
-    <h3 class="title is-4">Qualitative comparison</h3>
+    <div class="column is-full-width">
+      <h3 class="title is-4">Qualitative comparison</h3>
 
-    <!-- <h3 align="center"> Hover over image to move the zoomed in patch </h3>
-    <h3 align="center">Click on reference image to switch to a different image</h3> -->
-            
-      <div class="img-zoom-container" align="center">
-        <figure display="inline-block">
-          <img id="reference0"
-                src="./media/uni-slam/Uni-SLAM/images/comparison/gt/000.png" data-image="./media/uni-slam/Uni-SLAM/images/comparison/gt/" >
-          <figcaption>Reference</figcaption>
-        </figure>
+      <!-- <h3 align="center"> Hover over image to move the zoomed in patch </h3>
+      <h3 align="center">Click on reference image to switch to a different image</h3> -->
+              
+        <div class="img-zoom-container" align="center">
+          <figure display="inline-block">
+            <img id="reference0"
+                  src="./media/uni-slam/Uni-SLAM/images/comparison/gt/000.png" data-image="./media/uni-slam/Uni-SLAM/images/comparison/gt/" >
+            <figcaption>Reference</figcaption>
+          </figure>
 
-        <figure display="inline-block">
-          <div id="zoomed-coslam0" class="img-zoom-result"
-                data-image="./media/uni-slam/Uni-SLAM/images/comparison/coslam/"></div>
-          <figcaption><a href="https://hengyiwang.github.io/projects/CoSLAM.html">Co-SLAM</a></figcaption>
-        </figure>
+          <figure display="inline-block">
+            <div id="zoomed-coslam0" class="img-zoom-result"
+                  data-image="./media/uni-slam/Uni-SLAM/images/comparison/coslam/"></div>
+            <figcaption><a href="https://hengyiwang.github.io/projects/CoSLAM.html">Co-SLAM</a></figcaption>
+          </figure>
 
-        <figure display="inline-block">
-          <div id="zoomed-bslam0" class="img-zoom-result"
-                data-image="./media/uni-slam/Uni-SLAM/images/comparison/bslam/"></div>
-          <figcaption><a href="https://vlis2022.github.io/nerf-slam-benchmark/">BSLAM</a></figcaption>
-        </figure>
+          <figure display="inline-block">
+            <div id="zoomed-bslam0" class="img-zoom-result"
+                  data-image="./media/uni-slam/Uni-SLAM/images/comparison/bslam/"></div>
+            <figcaption><a href="https://vlis2022.github.io/nerf-slam-benchmark/">BSLAM</a></figcaption>
+          </figure>
 
-        <figure display="inline-block">
-          <div id="zoomed-plgslam0" class="img-zoom-result"
-                data-image="./media/uni-slam/Uni-SLAM/images/comparison/plg/"></div>
-          <figcaption><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Deng_PLGSLAM_Progressive_Neural_Scene_Represenation_with_Local_to_Global_Bundle_CVPR_2024_paper.pdf">PLGSLAM</a></figcaption>
-        </figure>
+          <figure display="inline-block">
+            <div id="zoomed-plgslam0" class="img-zoom-result"
+                  data-image="./media/uni-slam/Uni-SLAM/images/comparison/plg/"></div>
+            <figcaption><a href="https://openaccess.thecvf.com/content/CVPR2024/papers/Deng_PLGSLAM_Progressive_Neural_Scene_Represenation_with_Local_to_Global_Bundle_CVPR_2024_paper.pdf">PLGSLAM</a></figcaption>
+          </figure>
 
-        <figure display="inline-block">
-          <div id="zoomed-loopslam0" class="img-zoom-result"
-                data-image="./media/uni-slam/Uni-SLAM/images/comparison/loopy/"></div>
-          <figcaption><a href="https://notchla.github.io/Loopy-SLAM/">Loopy-SLAM</a></figcaption>
-        </figure>
+          <figure display="inline-block">
+            <div id="zoomed-loopslam0" class="img-zoom-result"
+                  data-image="./media/uni-slam/Uni-SLAM/images/comparison/loopy/"></div>
+            <figcaption><a href="https://notchla.github.io/Loopy-SLAM/">Loopy-SLAM</a></figcaption>
+          </figure>
 
-        <figure display="inline-block">
-          <div id="zoomed-unislam0" class="img-zoom-result"
-                data-image="./media/uni-slam/Uni-SLAM/images/comparison/unislam/"></div>
-          <figcaption>Uni-SLAM (Ours)</figcaption>
-        </figure>
+          <figure display="inline-block">
+            <div id="zoomed-unislam0" class="img-zoom-result"
+                  data-image="./media/uni-slam/Uni-SLAM/images/comparison/unislam/"></div>
+            <figcaption>Uni-SLAM (Ours)</figcaption>
+          </figure>
 
-      </div>
+        </div>
+    </div>
 
       <br><br>
 
@@ -530,8 +531,6 @@
 <script> imageZoom("reference0", ["zoomed-coslam0", "zoomed-bslam0", "zoomed-plgslam0", "zoomed-loopslam0", "zoomed-unislam0"], 2); </script>
 <script> imageZoom("reference1", ["zoomed-coslam1", "zoomed-bslam1", "zoomed-plgslam1", "zoomed-loopslam1", "zoomed-unislam1"], 1); </script>
 
-<script> imageZoom("reference_top0", ["zoomed-eslam_top0", "zoomed-goslam_top0", "zoomed-pointslam_top0", "zoomed-ours_top0"], 1); </script>
-<script> imageZoom("reference_top1", ["zoomed-eslam_top1", "zoomed-goslam_top1", "zoomed-pointslam_top1", "zoomed-ours_top1"], 1); </script>
 
 <section class="section" id="BibTeX">
   <div class="container is-max-desktop content">
