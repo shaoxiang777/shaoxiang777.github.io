@@ -38,8 +38,8 @@ function imageZoom(imgID, resultIDs, n_images) {
     img.addEventListener("mousemove", moveLens);
 
     // /* Change images when click: */
-    // lens.addEventListener("click", nextImage);
-    // img.addEventListener("click", nextImage);
+    lens.addEventListener("click", nextImage);
+    img.addEventListener("click", nextImage);
     
     function moveLens(e) {
         /* Prevent any other actions that may occur when moving over the image */
