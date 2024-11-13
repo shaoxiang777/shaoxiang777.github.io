@@ -25,7 +25,8 @@ function imageZoom(imgID, resultIDs, n_images) {
         cy = res.at(-1).offsetHeight / lens.offsetHeight;
 
         /* Set background properties for the result DIV */
-        res.at(-1).style.backgroundImage = "url('" + res.at(-1).dataset.image + ("000" + img_ind).slice(-3) + ".png')";
+        res.at(-1).style.backgroundImage = "url('" + res.at(-1).dataset.image + (index).slice(-3) + ".png')";
+        // res.at(-1).style.backgroundImage = "url('" + res.at(-1).dataset.image + ("000" + img_ind).slice(-3) + ".png')";
         res.at(-1).style.backgroundSize = img.width * cx  + "px " + img.height * cy + "px";
     }
     
