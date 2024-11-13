@@ -13,7 +13,7 @@ function imageZoom(imgID, resultIDs, n_images) {
     /* Insert lens: */
     img.parentElement.insertBefore(lens, img);
 
-    let index = document.getElementById(imgID).getAttribute("src").split("/").at(-1).split(".")[0]
+    // let index = document.getElementById(imgID).getAttribute("src").split("/").at(-1).split(".")[0]
     
     /* Get zoom in image id*/
     var res = []
