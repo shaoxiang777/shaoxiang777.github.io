@@ -523,44 +523,72 @@
 
           <figure display="inline-block">
             <img id="reference2"
-                  src="./media/uni-slam/Uni-SLAM/images/scannet/gt/000.png" data-image="./media/uni-slam/Uni-SLAM/images/scannet/gt/" >
+                  src="./media/uni-slam/Uni-SLAM/images/tum/gt/000.png" data-image="./media/uni-slam/Uni-SLAM/images/tum/gt/" >
             <figcaption>Reference</figcaption>
           </figure>
 
           <figure display="inline-block">
             <div id="zoomed-unislam2" class="img-zoom-result"
-                  data-image="./media/uni-slam/Uni-SLAM/images/scannet/unislam/"></div>
+                  data-image="./media/uni-slam/Uni-SLAM/images/tum/unislam/"></div>
             <figcaption>Uni-SLAM (Ours)</figcaption>
           </figure>
 
           <figure display="inline-block">
             <div id="zoomed-coslam2" class="img-zoom-result"
-                  data-image="./media/uni-slam/Uni-SLAM/images/scannet/coslam/"></div>
+                  data-image="./media/uni-slam/Uni-SLAM/images/tum/coslam/"></div>
             <figcaption><a href="https://hengyiwang.github.io/projects/CoSLAM.html">Co-SLAM</a></figcaption>
           </figure>
 
           <figure display="inline-block">
             <div id="zoomed-bslam2" class="img-zoom-result"
-                  data-image="./media/uni-slam/Uni-SLAM/images/scannet/bslam/"></div>
+                  data-image="./media/uni-slam/Uni-SLAM/images/tum/bslam/"></div>
             <figcaption><a href="https://vlis2022.github.io/nerf-slam-benchmark/">BSLAM</a></figcaption>
           </figure>
 
           <figure display="inline-block">
             <div id="zoomed-point2" class="img-zoom-result"
-                  data-image="./media/uni-slam/Uni-SLAM/images/scannet/point/"></div>
+                  data-image="./media/uni-slam/Uni-SLAM/images/tum/point/"></div>
             <figcaption><a href="https://github.com/eriksandstroem/Point-SLAM">Point-SLAM</a></figcaption>
           </figure>
 
           <figure display="inline-block">
             <div id="zoomed-loopslam2" class="img-zoom-result"
-                  data-image="./media/uni-slam/Uni-SLAM/images/scannet/loopy/"></div>
+                  data-image="./media/uni-slam/Uni-SLAM/images/tum/loopy/"></div>
             <figcaption><a href="https://notchla.github.io/Loopy-SLAM/">Loopy-SLAM</a></figcaption>
           </figure>
           
         </div>
 
-      
-        
+        <br><br>
+
+        <h3 class="title is-4">Mesh viewer</h3>
+        <div class="grid-container">
+          <div class="item1">
+                  <div class="content" center="">
+                    <h2 class="title is-5 has-text-centered">Co-SLAM</h2>
+                  </div>
+                  <model-viewer style="height: 360px; width: 480px;"
+                            alt="Co-SLAM"
+                            src="./media/uni-slam/Uni-SLAM/coslam_scan0000.glb"
+                            ar-status="not-presenting"
+                            camera-controls auto-rotate
+                            exposure=".8"
+                            generate-schema>
+                  </model-viewer>
+          </div>
+          <div class="item2">
+                  <div class="content" center="">
+                    <h2 class="title is-5 has-text-centered">Ours</h2>
+                  </div>
+                  <model-viewer style="height: 360px; width: 480px;"
+                            alt="Uni-SLAM"
+                            src="./media/uni-slam/Uni-SLAM/coslam_scan0000.glb"
+                            ar-status="not-presenting"
+                            camera-controls auto-rotate
+                            exposure=".8"
+                            generate-schema>
+                  </model-viewer>
+          </div>
       </div>
     </div>
   </div>
