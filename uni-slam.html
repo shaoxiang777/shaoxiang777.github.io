@@ -36,20 +36,21 @@
   <link rel="icon" href="./media/uni-slam/static/images/icon.svg">
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+  </script>
+
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+
   <script defer src="./media/uni-slam/static/js/fontawesome.all.min.js"></script>
   <script src="./media/uni-slam/static/js/bulma-carousel.min.js"></script>
   <script src="./media/uni-slam/static/js/bulma-slider.min.js"></script>
   <script src="./media/uni-slam/static/js/index.js"></script>
   <script src="./media/uni-slam/static/js/mag.js"></script>
-
-  <!-- Loads <model-viewer> for modern browsers: -->
-  <script type="module"
-  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
-  </script>
-  <!-- Loads <model-viewer> for old browsers like IE11: -->
-  <script nomodule
-  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
-  </script>
 
   <style>
     .grid-container {
@@ -134,7 +135,7 @@
             <h2 class="title is-4">WACV 2025</h2>
           </div>
 
-          <h1 class="title is-1 publication-title">Uni-SLAM: Uncertainty-Aware Neural Implicit SLAM for Real-Time Dense Indoor Scene Reconstruction</h1>
+          <!-- <h1 class="title is-1 publication-title">Uni-SLAM: Uncertainty-Aware Neural Implicit SLAM for Real-Time Dense Indoor Scene Reconstruction</h1> -->
           <div class="is-size-5 publication-authors">
             <span class="author-block">
               <a href="https://shaoxiang777.github.io/">Shaoxiang Wang</a>,
