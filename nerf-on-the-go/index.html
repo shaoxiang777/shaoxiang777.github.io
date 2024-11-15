@@ -103,53 +103,53 @@
 <body>
 
 
-  <section class="section">
-    <div class="container is-max-widescreen">
-     
-  
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-full_width">
-          <h2 class="title is-3">Visualization</h2>
-        </div>
+<section class="section">
+  <div class="container is-max-widescreen">
+    
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <h2 class="title is-3">Visualization</h2>
       </div>
-      <br><br>
-      <h3 class="title is-4">Qualitative comparison</h3>
-  
-      <h3 class="title is-4">Mesh viewer</h3>
-  
-      <div class="grid-container">
-        <div class="item1">
-                <div class="content" center="">
-                  <h2 class="title is-5 has-text-centered">NICE-SLAM (2Hz)</h2>
-                </div>
-                <model-viewer style="height: 360px; width: 480px;"
-                          alt="NICE-SLAM"
-                          src="./static/tum_mesh.glb"
-                          ar-status="not-presenting"
-                          camera-controls auto-rotate
-                          exposure=".8"
-                          generate-schema>
-                </model-viewer>
-        </div>
-        <div class="item2">
-                <div class="content" center="">
-                  <h2 class="title is-5 has-text-centered">Ours(12Hz)</h2>
-                </div>
-                <model-viewer style="height: 360px; width: 480px;"
-                          alt="Co-SLAM"
-                          src="./static/tum_mesh.glb"
-                          ar-status="not-presenting"
-                          camera-controls auto-rotate
-                          exposure=".8"
-                          generate-schema>
-                </model-viewer>
-        </div>
-      </div>
-  
-      <br>
-      
     </div>
-  </section>
+    <br><br>
+    <h3 class="title is-4">Qualitative comparison</h3>
+
+    <h3 class="title is-4">Mesh viewer</h3>
+
+    <div class="grid-container">
+      <div class="item1">
+              <div class="content" center="">
+                <h2 class="title is-5 has-text-centered">NICE-SLAM (2Hz)</h2>
+              </div>
+              <model-viewer style="height: 360px; width: 480px;"
+                        alt="NICE-SLAM"
+                        src="static/tum_mesh.glb"  
+                        ar-status="not-presenting"
+                        camera-controls auto-rotate
+                        exposure=".8"
+                        generate-schema>
+              </model-viewer>
+      </div>
+      <div class="item2">
+              <div class="content" center="">
+                <h2 class="title is-5 has-text-centered">Ours(13Hz)</h2>
+              </div>
+              <model-viewer style="height: 360px; width: 480px;"
+                        alt="Co-SLAM"
+                        src="static/tum_mesh.glb"
+                        ar-status="not-presenting"
+                        camera-controls auto-rotate
+                        exposure=".8"
+                        generate-schema>
+              </model-viewer>
+      </div>
+    </div>
+
+    <br>
+    
+  </div>
+</section>
   
 
 
