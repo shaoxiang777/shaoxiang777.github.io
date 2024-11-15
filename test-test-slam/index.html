@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="description"
+        content="Deformable Neural Radiance Fields creates free-viewpoint portraits (nerfies) from casually captured videos.">
+  <meta name="keywords" content="Nerfies, D-NeRF, NeRF">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Nerfies: Deformable Neural Radiance Fields</title>
+
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-PYVRSFMDRL"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
+    gtag('js', new Date());
+
+    gtag('config', 'G-PYVRSFMDRL');
+  </script>
+
+  <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./static/css/bulma.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-carousel.min.css">
+  <link rel="stylesheet" href="./static/css/bulma-slider.min.css">
+  <link rel="stylesheet" href="./static/css/fontawesome.all.min.css">
+  <link rel="stylesheet"
+        href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+  <link rel="stylesheet" href="./static/css/index.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <!-- Loads <model-viewer> for modern browsers: -->
+  <script type="module"
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer.js">
+  </script>
+
+  <!-- Loads <model-viewer> for old browsers like IE11: -->
+  <script nomodule
+  src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js">
+  </script>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script defer src="./static/js/fontawesome.all.min.js"></script>
+  <script src="./static/js/bulma-carousel.min.js"></script>
+  <script src="./static/js/bulma-slider.min.js"></script>
+  <script src="./static/js/index.js"></script>
+  <style>
+    .grid-container {
+      display: grid;
+      grid-template-columns: auto auto auto auto auto auto;
+      gap: 10px;
+      padding: 0;
+    }
+    
+    .grid-container > div {
+      text-align: center;
+      padding: 0;
+      font-size: 30px;
+    }
+    
+    .item1 {
+      grid-column: 1 / 4;
+    }
+    .item2 {
+      grid-column: 4 / 7;
+    }
+    .item3 {
+      grid-column: 1 / 3;
+    }
+    .item4 {
+      grid-column: 3 / 5;
+    }
+    .item5 {
+      grid-column: 5 / 7;
+    }
+    
+    
+    </style>
+</head>
+<body>
+
+
+
+<section class="section">
+  <div class="container is-max-widescreen">
+   
+
+    <div class="columns is-centered has-text-centered">
+      <div class="column is-full_width">
+        <h2 class="title is-3">Visualization</h2>
+      </div>
+    </div>
+    <br><br>
+    <h3 class="title is-4">Qualitative comparison</h3>
+
+    <h3 class="title is-4">Mesh viewer</h3>
+
+    <div class="grid-container">
+      <div class="item1">
+              <div class="content" center="">
+                <h2 class="title is-5 has-text-centered">NICE-SLAM (1Hz)</h2>
+              </div>
+              <model-viewer style="height: 360px; width: 480px;"
+                        alt="NICE-SLAM"
+                        src="./static/tum_mesh.glb"
+                        ar-status="not-presenting"
+                        camera-controls auto-rotate
+                        exposure=".8"
+                        generate-schema>
+              </model-viewer>
+      </div>
+      <div class="item2">
+              <div class="content" center="">
+                <h2 class="title is-5 has-text-centered">Ours(12Hz)</h2>
+              </div>
+              <model-viewer style="height: 360px; width: 480px;"
+                        alt="Co-SLAM"
+                        src="./static/tum_mesh.glb"
+                        ar-status="not-presenting"
+                        camera-controls auto-rotate
+                        exposure=".8"
+                        generate-schema>
+              </model-viewer>
+      </div>
+    </div>
+
+    <br>
+    
+  </div>
+</section>
+
+
+
+
+
+
+
+<footer class="footer">
+  <div class="container">
+    <div class="content has-text-centered">
+      <a class="icon-link" href="https://github.com/keunhong" class="external-link" disabled>
+        <i class="fab fa-github"></i>
+      </a>
+    </div>
+    <div class="columns is-centered">
+      <div class="column is-8">
+        <div class="content">
+          <p>
+            This website is licensed under a <a rel="license"
+                                                href="http://creativecommons.org/licenses/by-sa/4.0/">Creative
+            Commons Attribution-ShareAlike 4.0 International License</a>.
+          </p>
+          <p>
+            This means you are free to borrow the <a
+              href="https://github.com/nerfies/nerfies.github.io">source code</a> of this website,
+            we just ask that you link back to this page in the footer.
+            Please remember to remove the analytics code included in the header of the website which
+            you do not want on your website.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</footer>
+
+</body>
+</html>
