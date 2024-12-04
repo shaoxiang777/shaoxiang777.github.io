@@ -18,6 +18,7 @@ I received my Master’s degree in Mechatronics from the Karlsruhe Institute of 
 - **Uni-SLAM: Uncertainty-Aware Neural Implicit SLAM for Real-Time Dense Indoor Scene Reconstruction**  
   *Shaoxiang Wang, Yaxu Xie, Chun-Peng Chang, Christen Millerdurai, Alain Pagani, Didier Stricker*  
   *IEEE/CVF Winter Conference on Applications of Computer Vision (**WACV**), 2025*   
+  *[Paper](https://arxiv.org/abs/2412.00242) [Project Page](https://shaoxiang777.github.io/project/uni-slam/)*
 
 - **MiKASA: Multi-Key-Anchor & Scene-Aware Transformer for 3D Visual Grounding**  
   *Chun-Peng Chang, Shaoxiang Wang, Alain Pagani, Didier Stricker*     
