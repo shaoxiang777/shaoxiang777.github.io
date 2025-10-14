@@ -10,7 +10,7 @@
 locale                   : "en-US"
 title                    : "Personal Homepage"
 title_separator          : "-"
-name                     : &name "Shaoxiang Wang"
+name                     : &name "Shaoxiang Wang (王绍翔)"
 description              : &description "personal description"
 url                      : https://shaoxiang777.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
@@ -21,18 +21,18 @@ repository               : "shaoxiang777/shaoxiang777.github.io"
 #               Additional customization can be done by editing /_includes/author-profile.html
 author:
   # Biographic information
-  avatar           : "shaoxiang_profile.png"
-  name             : "Shaoxiang Wang"
+  avatar           : "shaoxiang_profile.jpg"
+  name             : "Shaoxiang Wang (王绍翔)"
   # pronouns         : # example: "she/her"  
   # bio              : "Short biography for the left-hand sidebar"
   location         : "Kaiserslautern, Germany"
-  employer         : "DFKI"
+  employer         : "DFKI & RPTU"
   # uri              : # URL
   email            : "shaoxiang.wang@dfki.de" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
-  googlescholar    : # "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+  googlescholar    : "https://scholar.google.com/citations?user=alw80fUAAAAJ&hl=en"
   impactstory      : # URL
   orcid            : # "http://orcid.org/yourorcidurl"
   semantic         : # URL
