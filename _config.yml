@@ -8,7 +8,7 @@
 
 # Basic Site Settings
 locale                   : "en-US"
-title                    : "Personal Homepage"
+title                    : "Homepage"
 title_separator          : "-"
 name                     : &name "Shaoxiang Wang (王绍翔)"
 description              : &description "personal description"
