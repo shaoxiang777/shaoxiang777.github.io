@@ -17,10 +17,12 @@
 }
 
 .page {
-  @include breakpoint($large) {
+  @include breakpoint($medium-wide) {
     @include span(10 of 12 last);
-    @include prefix(0.5 of 12);
-    @include suffix(2 of 12);
+    width: calc(100% - 16rem);
+    margin-left: 16rem;
+    margin-right: 0;
+    padding-right: 0;
   }
 
   .page__inner-wrap {
