@@ -119,6 +119,51 @@
       padding-right: 0 !important;
     }
   }
+
+  .news-list {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 0 0.75rem;
+  }
+
+  .news-list li {
+    margin-bottom: 0.8rem;
+  }
+
+  .news-date {
+    font-weight: 700;
+    color: #000;
+  }
+
+  .news-extra {
+    display: none;
+  }
+
+  .news-expanded .news-extra {
+    display: list-item;
+  }
+
+  .news-toggle-wrap {
+    text-align: center;
+    margin: 0.6rem 0 1.5rem;
+  }
+
+  .news-toggle {
+    border: 0;
+    border-radius: 999px;
+    background: #777;
+    color: #fff;
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 700;
+    line-height: 1;
+    padding: 0.6rem 1.05rem;
+  }
+
+  .news-toggle:hover,
+  .news-toggle:focus {
+    background: #666;
+  }
 </style>
 
 
@@ -238,8 +283,49 @@
 
 <p>I received my Master’s degree in Mechatronics from the Karlsruhe Institute of Technology (KIT), during which I conducted a 6-month thesis project in efficient computer vision at <a href="https://www.bmwgroup.com/en/innovation/automated-driving.html">BMW Group</a> with Lukas Frickenstein, under the supervision of <a href="https://www.itiv.kit.edu/21_53.php">Jürgen Becker</a> at KIT and <a href="https://www.ce.cit.tum.de/lis/stechele/">Walter Stechele</a> at TU Munich. Prior to KIT, I obtained a Bachelor’s degree in Mechatronics from Harbin Institute of Technology (<a href="https://en.hit.edu.cn/">HIT</a>).</p>
 
+
+<h2 id="News">News</h2>
+<ul class="news-list" id="news-list">
+  <li><span class="news-date">[May 2026]</span> Inpaint360GS was invited to a poster session in <a href="https://www.spar3d.org/">SPAR-3D workshop</a> at CVPR 2026.</li>
+  <li><span class="news-date">[April 2026]</span> One paper got accepted in SIGGRAPH 2026.</li>
+  <li><span class="news-date">[February 2026]</span> One paper got accepted in CVPR 2026.</li>
+  <li class="news-extra"><span class="news-date">[December 2025]</span> Two papers got accepted in WACV 2026.</li>
+  <li class="news-extra"><span class="news-date">[December 2024]</span> One paper got accepted in WACV 2025.</li>
+  <li class="news-extra"><span class="news-date">[February 2024]</span> One paper got accepted in CVPR 2024.</li>
+</ul>
+<div class="news-toggle-wrap">
+  <button class="news-toggle" id="news-toggle" type="button" aria-expanded="false" aria-controls="news-list">Show more</button>
+</div>
+
+
 <h2 id="publications">Publications</h2>
 
+
+
+<div style="display: flex; align-items: flex-start; margin-bottom: 40px;">
+    <div style="flex: 0 0 300px; margin-right: 20px;">
+        <img src="../images/egoforce_teaser.gif" width="300" />
+    </div>
+    <div style="flex: 1;">
+        <h3 style="margin-top: 0;">EgoForce: Forearm-Guided Camera-Space 3D Hand Pose from a Monocular Egocentric Camera</h3>
+        <div style="margin-bottom: 1px;">
+            <a href="https://chris10m.github.io/">Christen Millerdurai</a>,
+            <strong>Shaoxiang Wang</strong>,
+            <a href="https://scholar.google.com/citations?user=3ZKuh9EAAAAJ&hl=en">Yaxu Xie</a>,
+            <a href="https://people.mpi-inf.mpg.de/~golyanik/">Vladislav Golyanik</a>,
+            <a href="https://av.dfki.de/members/stricker/">Didier Stricker</a>,
+            <a href="https://sites.google.com/site/alainpagani/">Alain Pagani</a>
+            
+        </div>
+        <p style="margin-bottom: 1px;"><em>SIGGRAPH 2026 </em></p>
+        <p style="margin-top: 0;">
+            <a href="https://arxiv.org/pdf/2605.12498">[arXiv]</a>
+            <a href="https://github.com/dfki-av/EgoForce/tree/main">[code]</a>
+            <a href="https://dfki-av.github.io/EgoForce/">[website]</a>
+        </p>
+        <p style="color: #000;">Monocular Absolute Camera-Space 3D Hand Pose and Shape Reconstruction Across Camera Models.</p>
+    </div>
+</div>
 
 
 
@@ -279,7 +365,7 @@
     <div style="flex: 1;">
         <h3 style="margin-top: 0;">Inpaint360GS: Efficient Object-Aware 3D Inpainting via Gaussian Splatting for 360° Scenes</h3>
         <p style="margin-bottom: 1px;"><strong>Shaoxiang Wang</strong>, <a href="https://www.linkedin.com/in/shihong-zhang-97861a293/">Shihong Zhang</a>, <a href="https://chris10m.github.io/">Christen Millerdurai</a>, <a href="https://av.dfki.de/members/stricker/">Didier Stricker</a>, <a href="https://sites.google.com/site/alainpagani/">Alain Pagani</a></p>
-        <p style="margin-bottom: 1px;"><em>WACV 2026 </em></p>
+        <p style="margin-bottom: 1px;"><em>CVPR 2026 Workshop, WACV 2026 </em></p>
         <p style="margin-top: 0;">
             <a href="https://arxiv.org/abs/2511.06457">[arXiv]</a>
             <a href="https://github.com/dfki-av/inpaint360gs">[code]</a>
@@ -402,6 +488,22 @@
 
     <script src="https://shaoxiang777.github.io/assets/js/main.min.js"></script>
 
+    <script>
+      (function () {
+        var newsList = document.getElementById('news-list');
+        var newsToggle = document.getElementById('news-toggle');
+
+        if (!newsList || !newsToggle) {
+          return;
+        }
+
+        newsToggle.addEventListener('click', function () {
+          var isExpanded = newsList.classList.toggle('news-expanded');
+          newsToggle.setAttribute('aria-expanded', isExpanded);
+          newsToggle.textContent = isExpanded ? 'Show less' : 'Show more';
+        });
+      })();
+    </script>
 
 
 
